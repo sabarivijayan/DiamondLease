@@ -199,9 +199,9 @@
 
         <section>
             <div class="banner">
-                <img src=./resources/assets/summerPromotionBanner.svg" alt="" />
+                <img src="./resources/assets/summerPromotionBanner.svg" alt="" />
                 <div class="banner-text">
-                    Receive guaranteed <button>GIFT VOUCHER</button> <br />on a monthly
+                    Receive guaranteed <button>Gift Voucher</button> <br />on a monthly
                     hire or lease
                 </div>
 
@@ -257,6 +257,73 @@
                     </div>
                 </div>
 
+                <div class="popular-car-card">
+                    <img src="./resources/assets/Rectangle 23951jac.svg" alt="" />
+                    <div class="popular-car-card-info">
+                        <h3 class="popular-car-card-info-heading">Jac J7</h3>
+                        <p class="popular-car-card-info-para">
+                            S3 Plus has been rated Five-Star in C-NCAP including front
+                            impact, side impact, frontal side impact & Whipping test.
+                        </p>
+                        <ul class="popular-car-ul">
+                            <li class="popular-car-li">
+                                <img src="./resources/assets/Vector.svg" alt="" />
+                                <p>6 People</p>
+                            </li>
+                            <li class="popular-car-li">
+                                <img src="./resources/assets/Vectorgear.svg" alt="" />
+                                <p>Automatic</p>
+                            </li>
+                            <li class="popular-car-li">
+                                <img src="./resources/assets/Vectordoor.svg" alt="" />
+                                <p>5 Doors</p>
+                            </li>
+                            <li class="popular-car-li">
+                                <img src="./resources/assets/Groupac.svg" alt="" />
+                                <p>AC</p>
+                            </li>
+                        </ul>
+
+                        <div class="popular-car-card-info-btm">
+                            <p class="popular-card-cost">AED 2700/ Monthly</p>
+                            <button class="book-now-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="popular-car-card">
+                    <img src="./resources/assets/Mask groupmitsubhishi.svg" alt="" />
+                    <div class="popular-car-card-info">
+                        <h3 class="popular-car-card-info-heading">Mitsubhishi Eclipse</h3>
+                        <p class="popular-car-card-info-para">
+                            Eclipse Cross is a fusion of sharp coupe looks and dynamic SUV
+                            mobility with signature Mitsubishi styling, technology and
+                            driving confidence.
+                        </p>
+                        <ul class="popular-car-ul">
+                            <li class="popular-car-li">
+                                <img src="./resources/assets/Vector.svg" alt="" />
+                                <p>6 People</p>
+                            </li>
+                            <li class="popular-car-li">
+                                <img src="./resources/assets/Vectorgear.svg" alt="" />
+                                <p>Automatic</p>
+                            </li>
+                            <li class="popular-car-li">
+                                <img src="./resources/assets/Vectordoor.svg" alt="" />
+                                <p>5 Doors</p>
+                            </li>
+                            <li class="popular-car-li">
+                                <img src="./resources/assets/Groupac.svg" alt="" />
+                                <p>AC</p>
+                            </li>
+                        </ul>
+
+                        <div class="popular-car-card-info-btm">
+                            <p class="popular-card-cost">AED 2700/ Monthly</p>
+                            <button class="book-now-btn">Book Now</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="popular-car-card">
                     <img src="./resources/assets/Rectangle 23951jac.svg" alt="" />
                     <div class="popular-car-card-info">
@@ -602,28 +669,25 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const burger = document.querySelector(".burger");
-            const sidebar = document.querySelector(".sidebar");
-            const close = document.getElementById("close-btn");
-            const BookACar = document.getElementById("book-A-car");
+        const burger = document.querySelector(".burger");
+        const sidebar = document.querySelector(".sidebar");
+        const close = document.getElementById("close-btn");
+        const BookACar = document.getElementById("book-A-car");
 
-            const bookTabs = document.getElementById("book-tabs");
+        const bookTabs =  document.getElementById("book-tabs");
 
-            burger.addEventListener("click", () => {
-                console.log("clicked");
-                sidebar.classList.add("active");
-            });
-
-            close.addEventListener("click", () => {
-                console.log("clicked");
-                sidebar.classList.remove("active");
-            });
-
-            BookACar.addEventListener("click", () => {
-                console.log("clicked");
-                bookTabs.classList.toggle("active"); 
-            });
+        burger.addEventListener("click", () => {
+          sidebar.classList.add("active");
         });
+
+        close.addEventListener("click", () => {
+          sidebar.classList.remove("active");
+        });
+
+        BookACar.addEventListener("click", () => {
+          bookTabs.classList.toggle("active");
+        });
+      });
 
         // Script for the working of accordian
 

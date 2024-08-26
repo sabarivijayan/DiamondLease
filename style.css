@@ -188,11 +188,11 @@ nav {
   background-color: rgb(70, 70, 70);
 }
 
-.sidebar .active {
+.sidebar.active {
   display: flex;
 }
 
-.sidebar .inactive {
+.sidebar.inactive {
   display: none;
 }
 
@@ -362,6 +362,7 @@ nav {
   padding: 10px 15px;
   border-radius: 15px;
   border: none;
+  cursor: pointer;
 }
 
 .slider-controls {
@@ -387,11 +388,8 @@ nav {
 }
 
 /* POPULAR CARS SECTION */
-/* ???????  need to comment this as of no*/
 .popular-cars {
   padding-top: 10px;
-
-  /* overflow-x: scroll; */
 }
 
 .popular-car-row {
@@ -577,7 +575,7 @@ nav {
   margin-bottom: 24px;
 }
 
-#StoreLinks img {
+.store-links img {
   display: flex;
 }
 
@@ -1047,12 +1045,35 @@ nav {
   .nav-layer {
     margin-bottom: 19px;
   }
-
-  .nav-para {
-    height: 15px;
+  .nav-marquee {
+    width: 100%;
     overflow: hidden;
+    background-color: #fff; /* Optional: background color */
+    border: none; /* Optional: border around the marquee */
+    display: flex;
+    justify-content: flex-end;
   }
-
+  
+  .nav-para {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%; /* Start the text outside the container */
+    animation: marquee 14.5s linear infinite;
+    font-size: 10px;
+    justify-content: flex-end;
+    color: #808080;
+    letter-spacing: -3.5%;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
   #name {
     display: none;
   }
@@ -1084,13 +1105,14 @@ nav {
   }
 
   .banner-text {
-    padding-top: 5px;
+    padding-top: 20px;
     top: 50%; /* Adjust position for smaller screens */
     font-size: 12px; /* Smaller font size */
   }
 
   .banner-text button {
     padding: 3px 6px; /* Smaller button size */
+    cursor: pointer;
   }
 
   .slider-controls {
@@ -1520,7 +1542,7 @@ nav {
     display: none;
   }
 
-  #book-tabs .active {
+  #book-tabs.active {
     display: block;
   }
 
